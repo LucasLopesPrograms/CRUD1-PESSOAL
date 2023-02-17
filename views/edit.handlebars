@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editar Cliente</h1>
+    <form action="/prod/updateprod" method="post">
+    <div class="form control">
+        
+    <input type="hidden" name="id" id="id" value="{{prod.id}}">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" placeholder="Digite o nome do produto" value="{{prod.nome}}" <br>
+    
+    <label for="email">E-mail:</label>
+    <input type="text" name="email" placeholder="Digite o e-mail do cliente" value="{{prod.email}}" <br>
+    
+    <label for="telefone">Telefone:</label>
+    <input type="text" name="telefone" placeholder="Digite o telefone do cliente" value="{{prod.telefone}}"  <br>
+    
+    <label for="idade">Idade:</label>
+    <input type="text" name="idade" placeholder="Digite a idade do cliente" value="{{prod.idade}}" <br>
+ 
+    </div>
+    
+    <input type="submit" value="editar">
+
+    </form>
+
+
+</body>
+</html>
